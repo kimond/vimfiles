@@ -38,9 +38,6 @@ set cmdheight=1    " Make the command area one lines high
 set encoding=utf-8
 set noshowmode     " Don't show the mode since Powerline shows it
 set title          " Set the title of the window in the terminal to the file
-if exists('+colorcolumn')
-  set colorcolumn=80 " Color the 80th column differently as a wrapping guide.
-endif
 " Disable tooltips for hovering keywords in Vim
 if exists('+ballooneval')
   " This doesn't seem to stop tooltips for Ruby files
