@@ -45,6 +45,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'honza/vim-snippets'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'scrooloose/syntastic'
+Bundle 'osyo-manga/vim-anzu'
 
 " Lib dependencies
 Bundle 'tomtom/tlib_vim'
