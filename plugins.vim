@@ -91,12 +91,6 @@ nnoremap <leader>gi :Git<space>
 command! Gcundo :Git reset HEAD~1
 
 " ---------------
-" Zoomwin
-" ---------------
-" Zoom Window to Full Size
-nnoremap <silent> <leader>wo :ZoomWin<CR>
-
-" ---------------
 " ctrlp.vim
 " ---------------
 " Ensure Ctrl-P isn't bound by default
@@ -148,12 +142,6 @@ let g:airline_section_z = '%3p%% %{substitute(line("."), "\\v(\\d)((\\d\\d\\d)+\
 hi! link cssAttr Constant
 
 " ---------------
-" Ag.vim
-" ---------------
-nnoremap <silent> <leader>as :AgFromSearch<CR>
-nnoremap <leader>ag :Ag<space>
-
-" ---------------
 " surround.vim
 " ---------------
 " Use # to get a variable interpolation (inside of a string)}
@@ -164,18 +152,6 @@ let g:surround_35  = "#{\r}"
 " Shortcuts for common surrounds
 map <leader>y# ysi"#
 
-" ------------
-" sideways.vim
-" ------------
-noremap gs :SidewaysRight<cr>
-noremap gS :SidewaysLeft<cr>
-
-" ---------------
-" switch.vim
-" ---------------
-nnoremap - :Switch<cr>
-
-" ---------------
 " indenthtml
 " ---------------
 " Setup indenthtml to propertly indent html. Without this, formatting doesn't
@@ -183,18 +159,17 @@ nnoremap - :Switch<cr>
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+" ---------------
+" switch.vim
+" ---------------
+nnoremap - :Switch<cr>
+
+" ---------------
 
 " ---------------
 " vim-markdown
 " ---------------
 let g:vim_markdown_folding_disabled = 1
-
-" ---------------
-" Unconditional Paste
-" ---------------
-let g:UnconditionalPaste_NoDefaultMappings = 1
-nnoremap gcP <Plug>UnconditionalPasteCharBefore
-nnoremap gcp <Plug>UnconditionalPasteCharAfter
 
 " ---------------
 " MatchTagAlways
@@ -234,14 +209,6 @@ let g:signify_sign_overwrite = 0
 " ---------------
 let g:togglecursor_leave='line'
 
-" -----------------------
-" rails.vim and ember.vim
-" -----------------------
-nnoremap <leader>e   :E
-nnoremap <leader>emm :Emodel<space>
-nnoremap <leader>evv :Eview<space>
-nnoremap <leader>ecc :Econtroller<space>
-
 " ---------------
 " UltiSnips
 " ---------------
@@ -251,38 +218,6 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " ---------------
-" Voogle
-" ---------------
-let g:voogle_map="<leader>gg"
-
-" ---------------
-" Vimux
-" ---------------
-let g:VimuxUseNearestPane = 1
-nnoremap <leader>a :call VimuxRunCommand("spring rspec --fail-fast")<CR>
-nnoremap <leader>A :call VimuxRunCommand("spring rspec")<CR>
-nnoremap <leader>cu :call VimuxRunCommand("spring cucumber")<CR>
-nnoremap <leader>ca :call VimuxRunCommand("spring cucumber; spring rspec")<CR>
-nnoremap <leader>cm :VimuxPromptCommand<CR>
-function WriteAndVimuxRunLastCommand()
-  :call WriteBufferIfNecessary()
-  :call VimuxRunLastCommand()
-endfunction
-nnoremap <leader>w :call WriteAndVimuxRunLastCommand()<CR>
-command! REmigrate :call VimuxRunCommand("rake db:drop db:create db:migrate test:prepare")
-command! Migrate :call VimuxRunCommand("rake db:migrate test:prepare")
-command! Rollback :call VimuxRunCommand("rake db:rollback")
-
-" ---------------
-" Turbux
-" ---------------
-let g:no_turbux_mappings = 1
-map <leader>X <Plug>SendTestToTmux
-map <leader>x <Plug>SendFocusedTestToTmux
-let g:turbux_command_rspec = 'spring rspec'
-let g:turbux_command_cucumber = 'spring cucumber'
-
-" ---------------
 " tcomment_vim
 " ---------------
 let g:tcommentMaps = 0
@@ -290,16 +225,6 @@ nnoremap <silent><leader>cc :TComment<CR>
 vnoremap <silent><leader>cc :TComment<CR>
 nnoremap <silent><leader>cb :TCommentBlock<CR>
 vnoremap <silent><leader>cb :TCommentBlock<CR>
-
-" --------------
-" tmux navigator
-" --------------
-let g:tmux_navigator_no_mappings = 1
-
-nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 
 " ------
 " ColorV
@@ -311,14 +236,6 @@ let g:colorv_preview_ftype = 'css,javascript,scss,stylus'
 " -------
 
 let g:portkey_autostart = 1
-
-" ---------
-" Ember.vim
-" ---------
-nnoremap <leader>eaa :Easset<space>
-nnoremap <leader>err :Eroute<space>
-nnoremap <leader>ert :Econfig router<CR>
-nnoremap <leader>ett :Etemplate<space>
 
 " --------
 " vim-anzu

@@ -52,4 +52,4 @@ Bundle 'tomtom/tlib_vim'
 
 " Language Additions
 Bundle 'klen/python-mode'
-Bundle 'davidhalter/jedi-vim'
+"Bundle 'davidhalter/jedi-vim'
