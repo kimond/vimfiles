@@ -4,7 +4,6 @@
 
 if has('win32') || has('win64')
   " Windows
-  source $VIMRUNTIME/mswin.vim
   set guifont=Consolas:h10
   set guioptions-=T " Toolbar
   set guioptions-=m " Menubar
@@ -20,10 +19,6 @@ if has('win32') || has('win64')
   cd ~
 elseif has('gui_macvim')
   " MacVim
-
-  " Custom Source Code font for Powerline
-  " From: https://github.com/Lokaltog/powerline-fonts
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 
   " Hide Toolbar in MacVim
   if has("gui_running")

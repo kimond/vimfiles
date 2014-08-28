@@ -22,7 +22,6 @@ nnoremap gy :%y+<cr>
 nnoremap vy ggVG
 
 " Make Y behave like other capital commands.
-" Hat-tip http://vimbits.com/bits/11
 nnoremap Y y$
 
 " Just to beginning and end of lines easier. From http://vimbits.com/bits/16
@@ -34,7 +33,6 @@ nnoremap go o<Esc>k
 nnoremap gO O<Esc>j
 
 " remap U to <C-r> for easier redo
-" from http://vimbits.com/bits/356
 nnoremap U <C-r>
 
 " Swap implementations of ` and ' jump to markers
@@ -52,7 +50,6 @@ nnoremap <silent> gk :wincmd k<CR>
 nnoremap <silent> gl :wincmd l<CR>
 
 "   4 Window Splits
-"
 "   -----------------
 "   g1 | g2 | g3 | g4
 "   -----------------
@@ -117,22 +114,10 @@ nnoremap <silent> <leader>ul :t.\|s/./-/\|:nohls<cr>
 nnoremap <silent> <leader>uul :t.\|s/./=/\|:nohls<cr>
 
 " Surround the commented line with lines.
-"
-" Example:
-"          # Test 123
-"          becomes
-"          # --------
-"          # Test 123
-"          # --------
 nnoremap <silent> <leader>cul :normal "lyy"lpwv$r-^"lyyk"lP<cr>
 
 " Format the entire file
 nnoremap <leader>fef mx=ggG='x
-
-" Format a json file with Python's built in json.tool.
-" from https://github.com/spf13/spf13-vim/blob/3.0/.vimrc#L390
-nnoremap <leader>jt <Esc>:%!underscore print<CR><Esc>:set filetype=json<CR>
-nnoremap <leader>jts <Esc>:%!underscore print --strict<CR><Esc>:set filetype=json<CR>
 
 " Split window vertically or horizontally *and* switch to the new split!
 nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>
@@ -140,10 +125,8 @@ nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>
 
 " Close the current window
 nnoremap <silent> <leader>sc :close<CR>
-" ---------------
+"
 " Typo Fixes
-" ---------------
-
 noremap <F1> <Esc>
 inoremap <F1> <Esc>
 cnoremap w' w<CR>

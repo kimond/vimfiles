@@ -2,7 +2,6 @@
 " Regular Vim Configuration (No Plugins Needed)
 " ---------------------------------------------
 
-
 " ---------------
 " Color
 " ---------------
@@ -12,7 +11,6 @@ colorscheme jellybeans
 if $TERM =~ "-256color"
    set t_Co=256
 endif
-
 
 " -----------------------------
 " File Locations
@@ -25,7 +23,6 @@ if has('persistent_undo')
   set undofile
   set undodir=~/.vim/.undo
 endif
-
 
 " ---------------
 " UI
@@ -45,7 +42,6 @@ if exists('+ballooneval')
   " 100 second delay seems to be the only way to disable the tooltips
   set balloondelay=100000"
 endif
-
 
 " ---------------
 " Behaviors
@@ -69,7 +65,6 @@ set scrolloff=3        " Keep three lines below the last line when scrolling
 set gdefault           " this makes search/replace global by default
 set switchbuf=useopen  " Switch to an existing buffer if one exists
 
-
 " ---------------
 " Text Format
 " ---------------
@@ -81,18 +76,14 @@ set autoindent
 set smarttab
 set expandtab
 
-
 " ---------------
 " Visual
 " ---------------
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
-" Show invisible characters
-set list
+set list " Show invisible characters
 
 " Show trailing spaces as dots and carrots for extended lines.
-" From Janus, http://git.io/PLbAlw
-
 " Reset the listchars
 set listchars=""
 " make tabs visible

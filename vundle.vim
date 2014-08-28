@@ -28,11 +28,8 @@ Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Rykka/colorv.vim'
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'altercation/vim-colors-solarized.git'
-Bundle 'majutsushi/tagbar'
 
 " Command
-Bundle 'tpope/vim-abolish'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
@@ -43,13 +40,13 @@ Bundle 'tpope/vim-sensible'
 Bundle 'garbas/vim-snipmate'
 Bundle 'sjl/gundo.vim'
 Bundle 'honza/vim-snippets'
-Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'scrooloose/syntastic'
 Bundle 'osyo-manga/vim-anzu'
 
 " Lib dependencies
 Bundle 'tomtom/tlib_vim'
+Bundle 'MarcWeber/vim-addon-mw-utils'
 
 " Language Additions
 Bundle 'klen/python-mode'
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'

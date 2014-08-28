@@ -16,12 +16,6 @@ nnoremap <Leader>vu :call BundleReloadAndRun("BundleInstall!")<CR>
 nnoremap <Leader>vc :call BundleReloadAndRun("BundleClean")<CR>
 
 " ---------------
-" space.vim
-" ---------------
-" Disables space mappings in select mode to fix snipMate.
-let g:space_disable_select_mode = 1
-
-" ---------------
 " Syntastic
 " ---------------
 let g:syntastic_enable_signs = 1
@@ -50,10 +44,6 @@ let g:NERDTreeIgnore = ['\.pyc$']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType")
   \&& b:NERDTreeType == "primary") | q | endif
 
-" ---------------
-" Indent Guides
-" ---------------
-let g:indent_guides_enable_on_vim_startup = 1
 
 " ---------------
 " Session
@@ -62,26 +52,10 @@ let g:session_autosave = 0
 let g:session_autoload = 0
 nnoremap <leader>os :OpenSession<CR>
 
-" ---------------
-" Tabular
-" ---------------
-nnoremap <Leader>t= :Tabularize assignment<CR>
-vnoremap <Leader>t= :Tabularize assignment<CR>
-nnoremap <Leader>t: :Tabularize symbol<CR>
-vnoremap <Leader>t: :Tabularize symbol<CR>
-nnoremap <Leader>t, :Tabularize comma<CR>
-vnoremap <Leader>t, :Tabularize comma<CR>
 
 " ---------------
 " Fugitive
 " ---------------
-nnoremap <Leader>gc :Gcommit -v<CR>
-nnoremap <Leader>gca :Gcommit -a -v<CR>
-nnoremap <Leader>gw :Gwrite<CR>
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gp :Git push<CR>
- " Mnemonic, gu = Git Update
-nnoremap <Leader>gu :Git pull<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 " Exit a diff by closing the diff window
 nnoremap <Leader>gx :wincmd h<CR>:q<CR>
@@ -93,28 +67,17 @@ command! Gcundo :Git reset HEAD~1
 " ---------------
 " ctrlp.vim
 " ---------------
-" Ensure Ctrl-P isn't bound by default
-let g:ctrlp_map = ''
-
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
-let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 " Fix fix new windows opening in split from startify
-let g:ctrlp_reuse_window = 'startify'
 let g:ctrlp_mruf_max = 350
 let g:ctrlp_mruf_default_order = 0
-
-" Leader Commands
-nnoremap <leader>t :CtrlPRoot<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>u :CtrlPCurFile<CR>
-nnoremap <leader>mr :CtrlPMRUFiles<CR>
 
 " ---------------
 " airline
 " ---------------
 let g:airline_theme = 'jellybeans'
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline_detect_modified = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#hunks#enabled = 0
@@ -152,36 +115,6 @@ let g:surround_35  = "#{\r}"
 " Shortcuts for common surrounds
 map <leader>y# ysi"#
 
-" indenthtml
-" ---------------
-" Setup indenthtml to propertly indent html. Without this, formatting doesn't
-" work on html.
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
-" ---------------
-" switch.vim
-" ---------------
-nnoremap - :Switch<cr>
-
-" ---------------
-
-" ---------------
-" vim-markdown
-" ---------------
-let g:vim_markdown_folding_disabled = 1
-
-" ---------------
-" MatchTagAlways
-" ---------------
-let g:mta_filetypes = {
-    \ 'html' : 1,
-    \ 'xhtml' : 1,
-    \ 'xml' : 1,
-    \ 'handlebars' : 1,
-    \ 'eruby' : 1,
-    \}
-
 " ---------------
 " YouCompleteMe
 " ---------------
@@ -192,30 +125,6 @@ let g:ycm_filetype_specific_completion_to_disable = {
     \ 'ruby' : 1,
     \ 'javascript' : 1,
     \}
-
-" ---------------
-" vim-signify
-" ---------------
-let g:signify_mapping_next_hunk = '<leader>gj'
-let g:signify_mapping_prev_hunk = '<leader>gk'
-let g:signify_mapping_toggle_highlight="<nop>"
-let g:signify_mapping_toggle="<nop>"
-" Makes switching buffers in large repos have no delay
-let g:signify_update_on_bufenter = 0
-let g:signify_sign_overwrite = 0
-
-" ---------------
-" vim-togglecursor
-" ---------------
-let g:togglecursor_leave='line'
-
-" ---------------
-" UltiSnips
-" ---------------
-let g:UltiSnipsSnippetDirectories=["MyUltiSnips"]
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " ---------------
 " tcomment_vim
@@ -231,19 +140,14 @@ vnoremap <silent><leader>cb :TCommentBlock<CR>
 " ------
 let g:colorv_preview_ftype = 'css,javascript,scss,stylus'
 
-" -------
-" portkey
-" -------
-
-let g:portkey_autostart = 1
 
 " --------
 " vim-anzu
 " --------
-nmap n <Plug>(anzu-n)
-nmap N <Plug>(anzu-N)
-nmap * <Plug>(anzu-star)
-nmap # <Plug>(anzu-sharp)
+nmap n <Plug>(anzu-n-with-echo)
+nmap N <Plug>(anzu-N-with-echo)
+nmap * <Plug>(anzu-star-with-echo)
+nmap # <Plug>(anzu-sharp-with-echo)
 let g:airline#extensions#anzu#enabled = 1
 
 " -----------
