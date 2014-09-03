@@ -5,24 +5,17 @@ if [ -d "~/.vim" ]; then
     mv ~/.vim ~/.vim_old
 fi
 
-
-if [ -d "~/vimfiles" ]; then
-    # Control will enter here if $DIRECTORY exists.
-    mv ~/vimfile ~/vimfiles_old
-fi
-
 if [ -f "~/.vimrc" ]; then
     mv ~/.vimrc ~/.vimrc_old
 fi
 
 #Installing the base directory of the vim files
 cd ~/
-git clone https://github.com/kimond/vimfiles.git
+git clone https://github.com/kimond/vimfiles.git .vim
 
-ln -s vimfiles .vim
-ln -s vimfiles/.vimrc .vimrc
+ln -s .vim/.vimrc .vimrc
 
-cd vimfiles
+cd .vim
 git submodule update --init
 
 #Install bundle with vundle
