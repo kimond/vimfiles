@@ -16,7 +16,7 @@ fi
 cd ~/
 git clone https://github.com/kimond/vimfiles.git .vim
 
-ln -sf .vim/.vimrc .vimrc
+ln -sf .vim/vimrc .vimrc
 
 cd .vim
 git submodule update --init

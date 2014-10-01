@@ -11,10 +11,6 @@ let maplocalleader = "\\"
 " Regular Mappings
 " ---------------
 
-" Use ; for : in normal and visual mode, less keystrokes
-nnoremap ; :
-vnoremap ; :
-
 " Yank entire buffer with gy
 nnoremap gy :%y+<cr>
 
@@ -27,10 +23,6 @@ nnoremap Y y$
 " Just to beginning and end of lines easier. From http://vimbits.com/bits/16
 noremap H ^
 noremap L $
-
-" Create newlines without entering insert mode
-nnoremap go o<Esc>k
-nnoremap gO O<Esc>j
 
 " remap U to <C-r> for easier redo
 nnoremap U <C-r>
@@ -80,16 +72,6 @@ nnoremap <C-j> 15gjzz
 nnoremap <C-k> 15gkzz
 vnoremap <C-j> 15gjzz
 vnoremap <C-k> 15gkzz
-
-" ---------------
-" Insert Mode Mappings
-" ---------------
-
-" Let's make escape better, together.
-inoremap jk <Esc>
-inoremap JK <Esc>
-inoremap Jk <Esc>
-inoremap jK <Esc>
 
 " ---------------
 " Leader Mappings
