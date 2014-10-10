@@ -11,9 +11,6 @@ let maplocalleader = "\\"
 " Regular Mappings
 " ---------------
 
-" Yank entire buffer with gy
-nnoremap gy :%y+<cr>
-
 " Select entire buffer
 nnoremap vy ggVG
 
@@ -85,9 +82,6 @@ nnoremap <leader>h *<C-O>
 
 " Toggle spelling mode with ,s
 nnoremap <silent> <leader>s :set spell!<CR>
-
-" Quickly switch to last buffer
-nnoremap <leader>, :e#<CR>
 
 " Underline the current line with '-'
 nnoremap <silent> <leader>ul :t.\|s/./-/\|:nohls<cr>

@@ -6,7 +6,11 @@
 " Color
 " ---------------
 set background=dark
-colorscheme jellybeans
+try
+  colorscheme jellybeans
+catch
+endtry
+
 " Force 256 color mode if available
 if $TERM =~ "-256color"
    set t_Co=256
@@ -15,7 +19,6 @@ endif
 " -----------------------------
 " File Locations
 " -----------------------------
-set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 set spellfile=~/.vim/spell/custom.en.utf-8.add
 " Persistent Undo
@@ -47,11 +50,11 @@ endif
 " Behaviors
 " ---------------
 syntax enable
-set backup             " Turn on backups
+set nobackup           " Turn off backups
 set autoread           " Automatically reload changes if detected
-set wildmenu           " Turn on WiLd menu
+set wildmenu           " Turn on Wild menu
 set hidden             " Change buffer - without saving
-set history=768        " Number of things to remember in history.
+set history=700        " Number of things to remember in history.
 set cf                 " Enable error files & error jumping.
 set clipboard+=unnamed " Yanks go on clipboard instead.
 set autowrite          " Writes on make/shell commands
@@ -75,6 +78,17 @@ set cindent
 set autoindent
 set smarttab
 set expandtab
+
+" ---------------
+" Searching
+" ---------------
+set ignorecase " Case insensitive search
+set smartcase  " Non-case sensitive search
+set incsearch  " Incremental search
+set hlsearch   " Highlight search results
+set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
+  \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,*/node_modules/*,
+  \rake-pipeline-*
 
 " ---------------
 " Visual
