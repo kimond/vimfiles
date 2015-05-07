@@ -117,3 +117,6 @@ vnoremap K k
 
 " Toggle paste mode with F5
 nnoremap <silent> <F5> :set paste!<CR>
+
+"Sudo write"
+cmap w!! w !sudo tee % >/dev/null
