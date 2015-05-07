@@ -33,7 +33,6 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-eunuch'
 Bundle "terryma/vim-multiple-cursors"
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-sensible'
