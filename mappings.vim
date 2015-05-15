@@ -24,12 +24,6 @@ noremap L $
 " remap U to <C-r> for easier redo
 nnoremap U <C-r>
 
-" Swap implementations of ` and ' jump to markers
-" By default, ' jumps to the marked line, ` jumps to the marked line and
-" column, so swap them
-nnoremap ' `
-nnoremap ` '
-
 " ---------------
 " Window Movement
 " ---------------

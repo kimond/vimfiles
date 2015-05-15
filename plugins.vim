@@ -104,9 +104,6 @@ hi! link cssAttr Constant
 " Thanks to http://git.io/_XqKzQ
 let g:surround_35  = "#{\r}"
 
-" Shortcuts for common surrounds
-map <leader>y# ysi"#
-
 " ---------------
 " YouCompleteMe
 " ---------------
@@ -131,16 +128,6 @@ vnoremap <silent><leader>cb :TCommentBlock<CR>
 " ColorV
 " ------
 let g:colorv_preview_ftype = 'css,javascript,scss,stylus'
-
-
-" --------
-" vim-anzu
-" --------
-nmap n <Plug>(anzu-n-with-echo)
-nmap N <Plug>(anzu-N-with-echo)
-nmap * <Plug>(anzu-star-with-echo)
-nmap # <Plug>(anzu-sharp-with-echo)
-let g:airline#extensions#anzu#enabled = 1
 
 " -----------
 " Python Mode

@@ -40,7 +40,6 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'sjl/gundo.vim'
 Bundle 'honza/vim-snippets'
 Bundle 'scrooloose/syntastic'
-Bundle 'osyo-manga/vim-anzu'
 
 " Lib dependencies
 Bundle 'tomtom/tlib_vim'
