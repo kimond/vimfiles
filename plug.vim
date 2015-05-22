@@ -8,7 +8,7 @@ Plug 'fholgado/minibufexpl.vim'
 
 " Ui
 Plug 'bling/vim-airline'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Rykka/colorv.vim'
 Plug 'nanotech/jellybeans.vim'
 
