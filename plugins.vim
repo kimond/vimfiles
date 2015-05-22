@@ -3,19 +3,6 @@
 " ----------------------------------------
 
 " ---------------
-" Vundle
-" ---------------
-command! ReloadVundle source ~/.vim/vundle.vim
-function BundleReloadAndRun(command)
-  :ReloadVundle
-  execute a:command
-endfunction
-
-nnoremap <Leader>vi :call BundleReloadAndRun("BundleInstall")<CR>
-nnoremap <Leader>vu :call BundleReloadAndRun("BundleInstall!")<CR>
-nnoremap <Leader>vc :call BundleReloadAndRun("BundleClean")<CR>
-
-" ---------------
 " Syntastic
 " ---------------
 let g:syntastic_enable_signs = 1
@@ -73,6 +60,7 @@ let g:airline_powerline_fonts = 0
 let g:airline_detect_modified = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#hunks#enabled = 0
+"let g:airline#extensions#tabline#enabled = 1
 let g:airline_mode_map = {
       \ 'n'  : 'N',
       \ 'i'  : 'I',
