@@ -5,7 +5,7 @@
 " ===========================================
 
 " All of the plugins are installed with Vundle from this file.
-source ~/.vim/vundle.vim
+source ~/.vim/plug.vim
 
 " Automatically detect file types. (must turn on after Vundle)
 filetype plugin indent on

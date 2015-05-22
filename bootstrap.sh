@@ -18,10 +18,12 @@ git clone https://github.com/kimond/vimfiles.git .vim
 
 ln -sf .vim/vimrc .vimrc
 
-cd .vim
-git submodule update --init
+echo "Get plug.vim"
+curl -flo  ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-#Install bundle with vundle
-vim +BundleInstall +qall
+#Install plugins with plug
+
+vim +PlugInstall +qall
 
 echo 'Setup complete. Run vim and enjoy'
