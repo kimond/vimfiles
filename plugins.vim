@@ -43,6 +43,13 @@ nnoremap <leader>gi :Git<space>
 " Undo the last commit
 command! Gcundo :Git reset HEAD~1
 
+
+"----------
+"GitGutter
+"----------
+let g:gitgutter_map_keys = 0
+
+
 " ---------------
 " ctrlp.vim
 " ---------------

@@ -10,6 +10,7 @@ Plug 'fholgado/minibufexpl.vim'
 Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'nanotech/jellybeans.vim'
+Plug 'airblade/vim-gitgutter'
 
 " Command
 Plug 'tomtom/tcomment_vim'
