@@ -119,11 +119,6 @@ vnoremap <silent><leader>cc :TComment<CR>
 nnoremap <silent><leader>cb :TCommentBlock<CR>
 vnoremap <silent><leader>cb :TCommentBlock<CR>
 
-" ------
-" ColorV
-" ------
-let g:colorv_preview_ftype = 'css,javascript,scss,stylus'
-
 " -----------
 " Python Mode
 " -----------
