@@ -83,7 +83,7 @@ set shiftwidth=4 " Tabs under smart indent
 set cindent
 set autoindent
 set smarttab
-set expandtab
+set expandtab " use spaces, not tabs
 
 " ---------------
 " Searching
