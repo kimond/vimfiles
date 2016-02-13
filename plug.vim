@@ -11,6 +11,7 @@ Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'nanotech/jellybeans.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline-themes'
 
 " Command
 Plug 'tomtom/tcomment_vim'
