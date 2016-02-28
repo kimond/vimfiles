@@ -3,7 +3,7 @@ filetype off                  " required
 
 call plug#begin('~/.vim/plugged')
 " Navigation
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fholgado/minibufexpl.vim'
 
 " Ui

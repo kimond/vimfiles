@@ -131,3 +131,6 @@ let g:pymode_lint_on_write = 0
 map <leader>bc :MBEbd<CR>
 map <leader>bn :MBEbn<CR>
 map <leader>bp :MBEbp<CR>
+nnoremap <silent> <F4> :MBEbd<CR>
+nnoremap <silent> <F3> :MBEbn<CR>
+nnoremap <silent> <F2> :MBEbp<CR>
