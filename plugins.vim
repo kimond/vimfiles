@@ -39,18 +39,13 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 
 
-" --------
-" Conoline
-" --------
-let g:conoline_use_colorscheme_default_insert=1
-
-
 " -----------
 " Vim session
 " -----------
 " Don't persist options and mappings because it can corrupt sessions.
 set sessionoptions-=options
 let g:session_autosave = 'yes'
+let g:session_autoload = 'no'
 
 " ---------------
 " Fugitive

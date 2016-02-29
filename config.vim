@@ -39,6 +39,7 @@ endif
 " ---------------
 " UI
 " ---------------
+set cursorline
 set ruler          " Ruler on
 set number         " Line numbers on
 set nowrap         " Line wrapping off

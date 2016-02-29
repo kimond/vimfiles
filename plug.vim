@@ -14,7 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kshenoy/vim-signature'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'miyakogi/conoline.vim'
+Plug 'ntpeters/vim-airline-colornum'
 
 " Command
 Plug 'tomtom/tcomment_vim'
