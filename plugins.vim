@@ -32,6 +32,26 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType")
   \&& b:NERDTreeType == "primary") | q | endif
 
 
+" -----------
+" Ident guide
+" -----------
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+
+
+" --------
+" Conoline
+" --------
+let g:conoline_use_colorscheme_default_insert=1
+
+
+" -----------
+" Vim session
+" -----------
+" Don't persist options and mappings because it can corrupt sessions.
+set sessionoptions-=options
+let g:session_autosave = 'yes'
+
 " ---------------
 " Fugitive
 " ---------------
@@ -40,6 +60,8 @@ nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gx :wincmd h<CR>:q<CR>
 " Start git command
 nnoremap <leader>gi :Git<space>
+" Run a git status
+nnoremap <leader>gst :Git status<CR>
 " Undo the last commit
 command! Gcundo :Git reset HEAD~1
 

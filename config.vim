@@ -11,9 +11,18 @@ try
 catch
 endtry
 
+" ---------------------------------
 " Force 256 color mode if available
+" ---------------------------------
 if $TERM =~ "-256color"
    set t_Co=256
+endif
+
+" ------------
+" Set GUI font
+" ------------
+if has("gui_running")
+    set guifont=Hack\ 12
 endif
 
 " -----------------------------

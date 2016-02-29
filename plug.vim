@@ -12,6 +12,9 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'nanotech/jellybeans.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'kshenoy/vim-signature'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'miyakogi/conoline.vim'
 
 " Command
 Plug 'tomtom/tcomment_vim'
@@ -24,10 +27,12 @@ Plug 'garbas/vim-snipmate'
 Plug 'sjl/gundo.vim'
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/syntastic'
+Plug 'xolox/vim-session'
 
 " Lib dependencies
 Plug 'tomtom/tlib_vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'xolox/vim-misc'
 
 " Language Additions
 Plug 'klen/python-mode'
