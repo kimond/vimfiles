@@ -48,6 +48,12 @@ nnoremap <silent> g= :wincmd =<CR>
 " Swap Windows
 nnoremap <silent> gx :wincmd x<CR>
 
+
+" Buffer
+nnoremap <silent> <F4> :bdelete<CR>
+nnoremap <silent> <F3> :bnext<CR>
+nnoremap <silent> <F2> :bprev<CR>
+
 " ---------------
 " Modifer Mappings
 " ---------------

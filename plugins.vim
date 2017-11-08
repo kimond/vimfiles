@@ -3,21 +3,11 @@
 " ----------------------------------------
 
 " ---------------
-" Syntastic
+" ALE
 " ---------------
-let g:syntastic_enable_signs = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'active_filetypes': [],
-                           \ 'passive_filetypes': [] }
-let g:syntastic_html_checkers = ['handlebars']
 
-" Hat tip http://git.io/SPIBfg
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_full_redraws = 1
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚠'
 
 " ---------------
 " NERDTree
@@ -85,6 +75,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_detect_modified = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#hunks#enabled = 0
+let g:airline#extensions#ales#enabled = 1
 "let g:airline#extensions#tabline#enabled = 1
 let g:airline_mode_map = {
       \ 'n'  : 'N',
@@ -142,13 +133,3 @@ vnoremap <silent><leader>cb :TCommentBlock<CR>
 " -----------
 let g:pymode_rope = 0
 let g:pymode_lint_on_write = 0
-
-" ----------
-" MiniBufExpl
-" ----------
-map <leader>bc :MBEbd<CR>
-map <leader>bn :MBEbn<CR>
-map <leader>bp :MBEbp<CR>
-nnoremap <silent> <F4> :MBEbd<CR>
-nnoremap <silent> <F3> :MBEbn<CR>
-nnoremap <silent> <F2> :MBEbp<CR>

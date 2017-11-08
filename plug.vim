@@ -4,11 +4,12 @@ filetype off                  " required
 call plug#begin('~/.vim/plugged')
 " Navigation
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'fholgado/minibufexpl.vim'
+Plug 'ap/vim-buftabline'
 
 " Ui
 Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
 Plug 'nanotech/jellybeans.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline-themes'
@@ -21,12 +22,11 @@ Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-sensible'
 Plug 'garbas/vim-snipmate'
 Plug 'sjl/gundo.vim'
 Plug 'honza/vim-snippets'
-Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 Plug 'xolox/vim-session'
 
 " Lib dependencies
