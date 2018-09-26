@@ -122,7 +122,7 @@ let g:ycm_filetype_specific_completion_to_disable = {
 " ---------------
 " tcomment_vim
 " ---------------
-let g:tcommentMaps = 0
+let g:tcomment_maps = 0
 nnoremap <silent><leader>cc :TComment<CR>
 vnoremap <silent><leader>cc :TComment<CR>
 nnoremap <silent><leader>cb :TCommentBlock<CR>
